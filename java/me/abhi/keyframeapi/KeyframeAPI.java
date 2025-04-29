@@ -64,11 +64,11 @@ public class KeyframeAPI extends JavaPlugin {
         return keyframeHandler.getKeyframeAnimationList();
     }
 
-    public boolean isPlayingAnimation(Player player) {
+    public static boolean isPlayingAnimation(Player player) {
         return keyframeHandler.isPlayingAnimation(player);
     }
 
-    public boolean isRecordingAnimation(Player player) {
+    public static boolean isRecordingAnimation(Player player) {
         return keyframeHandler.getRecordingAnimation().containsKey(player.getUniqueId());
     }
 
