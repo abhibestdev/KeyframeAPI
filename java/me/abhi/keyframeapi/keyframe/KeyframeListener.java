@@ -51,8 +51,8 @@ public class KeyframeListener implements Listener {
             if (keyframeAnimation == null) {
                 player.sendMessage(ChatColor.RED + "Something went wrong... no animation was found.");
             } else {
+                keyframeAnimation.getKeyframes().clear();
                 keyframeHandler.getRecordingKeyframes(player).forEach(keyframeAnimation::addKeyframe);
-                keyframeHandler.addKeyframeAnimation(keyframeAnimation);
                 keyframeAnimation.save();
 
                 player.sendMessage(ChatColor.GREEN + "You have ended the recording! Saved animation with name \"" + animationName + "\".");

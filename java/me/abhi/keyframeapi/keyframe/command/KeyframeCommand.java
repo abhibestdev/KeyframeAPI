@@ -67,7 +67,7 @@ public class KeyframeCommand {
             player.updateInventory();
         }
 
-        player.sendMessage(ChatColor.GREEN + "Started recording keyframe. Use the command Keyframe tool to add keyframes.");
+        player.sendMessage(ChatColor.GREEN + "Started recording keyframe. Use the Keyframe tool to add keyframes.");
         return;
     }
 
