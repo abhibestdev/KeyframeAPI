@@ -1,0 +1,5 @@
+name: KeyframeAPI
+version: 1.0
+main: me.abhi.keyframeapi.KeyframeAPI
+author: abhi
+api-version: 1.13
